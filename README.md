@@ -1,6 +1,10 @@
-A vimfiles collection tailored for Erlang development on Windows 7 / Server 2008.
+A vimfiles collection tailored for Erlang development
 
 Run install.cmd in an Administrator shell (needed for creating symlinks).
+
+TODO: Install vundle
+TODO: Install ctags
+TODO: include instructions to initialize tags for project
 
 The default GUI font is [DejaVu Sans Mono](http://dejavu-fonts.org) because it works nicely with the NERDtree plugin.
 
