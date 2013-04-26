@@ -1,11 +1,42 @@
+## About
+
 A vimfiles collection tailored for Erlang development
 
-Run install.cmd in an Administrator shell (needed for creating symlinks).
+## Quick start
 
-TODO: Install vundle
-TODO: Install ctags
-TODO: include instructions to initialize tags for project
+1. Setup [vimfiles]:
 
-The default GUI font is [DejaVu Sans Mono](http://dejavu-fonts.org) because it works nicely with the NERDtree plugin.
+   ```
+   $ git clone https://github.com/dmccown/vimfiles-erlang-linux.git ~/.vim
+   ```
+2. Install vundle:
 
-Inspired in part by [Vimcast 27](http://vimcasts.org/episodes/synchronizing-plugins-with-git-submodules-and-pathogen)
+   ```
+   $ git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
+   ```
+
+3. Install ctags:
+
+   ```
+   $ sudo apt-get install ctags
+   ```
+
+   From your project directory:
+
+   ```
+   $ ctags --file-scope=no -R --languages=erlang
+   ```
+4. Configure bundles:
+
+   ```
+   $ `vim +BundleInstall +qall`
+   ```
+
+5. Configure symlinks
+   ```
+   $ ./install.sh
+   ```
+
+## TODO 
+
+Move most of the manual steps to the install.sh script
