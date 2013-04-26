@@ -26,16 +26,9 @@ A vimfiles collection tailored for Erlang development
    ```
    $ ctags --file-scope=no -R --languages=erlang
    ```
-4. Configure bundles:
+4. Configure bundles: `vim +BundleInstall +qall`
 
-   ```
-   $ `vim +BundleInstall +qall`
-   ```
-
-5. Configure symlinks
-   ```
-   $ ./install.sh
-   ```
+5. Configure symlinks: `./install.sh`
 
 ## TODO 
 
